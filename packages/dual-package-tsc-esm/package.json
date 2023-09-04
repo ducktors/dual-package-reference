@@ -1,0 +1,24 @@
+{
+  "name": "dual-package-tsc-esm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && echo >dist/cjs/package.json '{\"type\":\"commonjs\"}'",
+    "attw": "pnpm exec attw --pack ."
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

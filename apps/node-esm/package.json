@@ -1,0 +1,22 @@
+{
+  "name": "node-esm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "keywords": [],
+  "author": "Maksim Sinik<maksim@sinik.it>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dual-package-tsup-cjs": "workspace:*",
+    "dual-package-tsup-esm": "workspace:*",
+    "dual-package-tsc-cjs": "workspace:*",
+    "dual-package-tsc-esm": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

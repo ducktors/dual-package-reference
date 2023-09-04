@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "references": [
+    {
+      "path": "../../packages/dual-package-tsup-cjs/tsconfig.json"
+    },
+    {
+      "path": "../../packages/dual-package-tsup-esm/tsconfig.json"
+    },
+    {
+      "path": "../../packages/dual-package-tsc-cjs/tsconfig.json"
+    },
+    {
+      "path": "../../packages/dual-package-tsc-esm/tsconfig.json"
+    }
+  ],
+  "include": ["src"]
+}

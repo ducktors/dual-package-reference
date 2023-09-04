@@ -1,0 +1,25 @@
+{
+  "name": "dual-package-tsup-cjs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "keywords": [],
+  "author": "Maksim Sinik<maksim@sinik.it>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "attw": "pnpm exec attw --pack ."
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
